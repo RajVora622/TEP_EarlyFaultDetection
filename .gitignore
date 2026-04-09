@@ -5,6 +5,12 @@ __pycache__/
 
 data/raw/*
 !data/raw/.gitkeep
-data/processed/*.csv
-data/processed/*.parquet
-results/
+
+data/metadata/*
+!data/metadata/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+results/eda/*
+!results/.gitkeep

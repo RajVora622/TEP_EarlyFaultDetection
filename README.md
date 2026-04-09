@@ -43,7 +43,13 @@ python -m src.data.load_data
 python -m src.data.make_features --input data/processed/tep_train.csv --output data/processed/tep_train_features.csv
 ```
 
-6. Run model scripts as modules from the project root, for example:
+6. Optionally generate exploratory summaries and plots:
+
+```bash
+python -m src.evaluation.plots --input data/processed/tep_train.csv --output-dir results/eda
+```
+
+7. Run model scripts as modules from the project root, for example:
 
 ```bash
 python -m src.models.train_logreg --data data/processed/tep_train.csv --eval-data data/processed/tep_test.csv --target faultNumber
@@ -55,3 +61,4 @@ python -m src.models.train_logreg --data data/processed/tep_train.csv --eval-dat
 - The processing script creates `run_id`, `dataset_split`, and `is_faulty` columns in addition to the original TEP columns.
 - Model scripts train on the 52 process columns (`xmeas_*` and `xmv_*`) and ignore metadata columns automatically.
 - Use `faultNumber` for multiclass fault classification or `is_faulty` for binary detection.
+- The EDA script writes summary CSVs plus distribution, missingness, correlation, and per-run trajectory plots under `results/eda/`.
