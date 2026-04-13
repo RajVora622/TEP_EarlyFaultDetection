@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:keepfloyding.github.io)",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:pubs.acs.org)",
+      "WebFetch(domain:users.abo.fi)",
+      "WebFetch(domain:skoge.folk.ntnu.no)",
+      "WebFetch(domain:ieee-dataport.org)",
+      "WebFetch(domain:bibmon.readthedocs.io)",
+      "WebFetch(domain:www.sciencedirect.com)",
+      "WebFetch(domain:medium.com)",
+      "WebFetch(domain:www.tandfonline.com)",
+      "WebFetch(domain:ttu-ir.tdl.org)",
+      "WebFetch(domain:papers.phmsociety.org)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:scispace.com)",
+      "WebFetch(domain:depts.washington.edu)",
+      "Bash(python3)",
+      "WebFetch(domain:www.researchgate.net)",
+      "WebFetch(domain:www.scribd.com)",
+      "Bash(python3:*)"
+    ]
+  }
+}
