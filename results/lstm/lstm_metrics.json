@@ -1,0 +1,21 @@
+{
+  "model": "SimpleLSTMDetector",
+  "feature_count": 52,
+  "window_size": 30,
+  "stride": 5,
+  "train_runs_used": 300,
+  "eval_runs_used": 150,
+  "train_windows_used": 28500,
+  "eval_windows_used": 25000,
+  "train_onset_sample": 20,
+  "eval_onset_sample": 160,
+  "recommended_threshold": {
+    "threshold": 0.6699059680104256,
+    "false_alarm_rate": 0.021702838063439065,
+    "event_recall": 0.9793103448275862,
+    "row_f1": 0.7831960173513056,
+    "median_detection_delay": 25.0
+  },
+  "threshold_metrics_path": "results/lstm/lstm_threshold_metrics.csv",
+  "prediction_path": "results/lstm/lstm_window_predictions.csv"
+}
